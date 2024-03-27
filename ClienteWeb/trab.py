@@ -1,7 +1,7 @@
 import requests
 
 def ask_question(question):
-    url = "http://localhost:8080/chatbot"  # Assuming the API is running locally
+    url = "http://localhost:8080/chatbot"
     data = question
     response = requests.post(url, json=data)
     if response.status_code == 200:
